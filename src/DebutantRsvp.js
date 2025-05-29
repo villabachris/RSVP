@@ -76,7 +76,7 @@ export default function DebutantRSVP() {
 
       {!flipped && !adminView && (
         <div className="z-10 max-w-xl text-center mb-10">
-          <h2 className="text-5xl font-bold text-pink-700 mb-4">Maria Clara</h2>
+          <h2 className="text-5xl font-bold text-pink-700 mb-4">Jamine</h2>
           <p className="text-lg text-gray-700">
             Celebrating her 18th birthday in elegance and grace. Join us as we honor her transition into adulthood with an unforgettable night filled with love, laughter, and memories.
           </p>
@@ -104,7 +104,7 @@ export default function DebutantRSVP() {
                   You're Invited!
                 </h1>
                 <p className="mb-4 text-gray-800 text-lg">
-                  Join us for the magical 18th debut of Maria Clara
+                  Join us for the magical 18th debut of Jasmine
                 </p>
                 <div className="mb-4">
                   <input
