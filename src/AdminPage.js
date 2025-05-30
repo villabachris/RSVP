@@ -6,6 +6,7 @@ export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [authenticated, setAuthenticated] = useState(false);
   const [responses, setResponses] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
 
   const SPREADSHEET_ID = "1nxTF5sLo9Dmey-rdl6rk5hShjPOP66iAknrEp2k8nxQ";
@@ -109,6 +110,15 @@ export default function AdminPage() {
           <span className="text-red-600">{notAttendingCount}</span> | Total Responses: {totalCount}
         </p>
       </div>
+      <div className="max-w-3xl mx-auto mb-4">
+        <input
+        type="text"
+        placeholder="Search guest name..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="w-full p-2 border border-pink-300 rounded-md"
+        />
+      </div>
 
       <div className="bg-white rounded-xl shadow-md p-6 max-w-3xl mx-auto space-y-4">
         {responses.length === 0 ? (
@@ -123,7 +133,10 @@ export default function AdminPage() {
               </tr>
             </thead>
             <tbody>
-              {responses.map(([name, response, timestamp], idx) => (
+              {responses
+              .filter(([name]) =>
+                    name.toLowerCase().includes(searchQuery.toLowerCase()))
+              .map(([name, response, timestamp], idx) => (
                 <tr
                   key={idx}
                   className="hover:bg-pink-50"
