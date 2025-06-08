@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import VantaBirds from "./VantaBirds";
 import { motion } from "framer-motion";
 
 export default function DebutantRSVP() {
@@ -85,8 +86,17 @@ export default function DebutantRSVP() {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center p-6 overflow-hidden">
+      <VantaBirds />
+      <div
+        className="absolute inset-0 z-0 bg-center bg-cover opacity-40 pointer-events-none"
+        style={{
+          backgroundImage: "url('/jas2.png')", // Replace with your file path
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-br from-pink-100 via-pink-200 to-pink-300 animate-gradient-slow"></div>
+        <div className="w-full h-full "></div>
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
           <div className="absolute w-96 h-96 bg-pink-400 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow left-[-10%] top-[-10%]" />
           <div className="absolute w-96 h-96 bg-purple-300 opacity-30 rounded-full mix-blend-multiply filter blur-3xl animate-pulse-slow right-[-10%] bottom-[-10%]" />
@@ -95,8 +105,8 @@ export default function DebutantRSVP() {
 
       {!flipped && !adminView && (
         <div className="z-10 max-w-xl text-center mb-10">
-          <h2 className="text-5xl font-bold text-pink-700 mb-4">Hi there! Jasmine is</h2>
-          <p className="text-lg text-gray-700">
+          <h2 className="text-5xl font-bold text-purple-700 mb-4">Hi there! Jasmine is</h2>
+          <p className="text-lg text-pink-100">
             celebrating her 18th birthday in elegance and grace. Join us as we honor her transition into adulthood with an unforgettable night filled with love, laughter, and memories.
           </p>
         </div>
