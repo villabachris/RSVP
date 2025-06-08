@@ -42,10 +42,7 @@ const VantaBirds = () => {
         position: "fixed",
         top: 0,
         left: 0,
-        zIndex: -10,
-        backgroundImage: "url('/jas.jpg')", // <-- Update path
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        zIndex: -10
       }}
     />
   );

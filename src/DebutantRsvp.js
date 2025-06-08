@@ -90,7 +90,7 @@ export default function DebutantRSVP() {
       <div
         className="absolute inset-0 z-0 bg-center bg-cover opacity-40 pointer-events-none"
         style={{
-          backgroundImage: "url('/jas2.png')", // Replace with your file path
+          backgroundImage: "url('https://jas-rsvp.netlify.app/jas2.png')", // Replace with your file path
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
