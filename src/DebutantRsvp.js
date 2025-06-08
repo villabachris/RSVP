@@ -85,7 +85,7 @@ export default function DebutantRSVP() {
 }, []);
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center p-6 overflow-hidden">
+    <div className="relative min-h-screen flex flex-col items-center p-6">
       <VantaBirds />
       <div
         className="absolute inset-0 z-0 bg-center bg-cover opacity-40 pointer-events-none"
